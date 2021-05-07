@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  head
+    script(src='https://unpkg.com/sweetalert/dist/sweetalert.min.js')
+  body
+    h1(data-text='back in black') Covid Tracker
+    img(src='https://prismic-io.s3.amazonaws.com/blogmigration/e1ac9e8e-0702-4996-8379-1c00912099fc_ericaaundrea_Instagram_image_2017-04-13_17-01-48_1492189805444940883_17244213-zvxO6AsYbmpkexFCATSMcgW57s6Wjn6hGyBFbLfgTek%3D.jpeg' alt='')
+    button.button.button2(onclick='JSalert2()')
+    button.button.button3(onclick='JSalert3()')
+    button.button.button4(onclick='JSalert4()')
+    button.button.button5(onclick='JSalert5()')
+    
+    
+    script(type='text/javascript').
+      function JSalert5() {
+      swal("Did you know?", "HIGHER RISK: \nScientists found that coronavirus thrived in low humidity and temperatures below 40° F -- the same environment found inside a typical refrigerator. To reduce risk of contraction you can:\ni)Clean reusable bags \nii)Wash your hands after putting groceries in fridge\n", "info");
+      }
+      function JSalert4() {
+      swal("Did you know?", "MODERATE RISK: \nCovid can last up to 3 days on metallic surfaces. When numerous people touch the same door knob, there is a higher risk of contracting the virus  \n\n", "info");
+      }
+      function JSalert3() {
+      swal("Did you know?", "LOWER RISK: \nAs this is wood, the virus can linger for hours, but not as long as when they are on metal. Take precaution. \n\n", "info");
+      }
+      function JSalert2() {
+      swal("Did you know?", "HIGHER RISK: \nThe handle and plate of the microwave have the ability to carry the virusx. Take precaution \n\n", "info");
+      }
+
